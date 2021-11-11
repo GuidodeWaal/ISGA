@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'FilsonPro';
+    src: url('../assets/FilsonProRegular.otf');
+    font-style: normal;
+    font-weight: 300;
+}
+  
+@font-face {
+      font-family: 'AcuminVariable';
+      src: url('../assets/AcuminVariableConcept.otf');
+      font-style: normal;
+      font-weight: 300;
+}
+  
+html,body {
+      margin: 0px;
+      height: 100%;
+      width: 100%;
+      position: relative;
+}
+  
+body {
+      background-color: #FFFFFF;
+}
+
+h1 {
+	font-family: 'FilsonPro', sans-serif;   
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #5475B6;
+	font-weight: 700; /* bold */
+	margin-bottom: 0.5em;
+	padding-left:0.5em;
+}
+
+h2 {
+	font-family: 'FilsonPro', sans-serif;   
+	font-size: 1.2em;
+	color: #FFFFFF;
+	background-color: #EB4F75;
+	font-weight: 700; /* bold */
+	width: fit-content;
+	padding: 5px 20px 5px 20px;
+	margin-bottom: 0.5em;
+}
+
+p {
+	font-family: 'AcuminVariable', sans-serif;
+	font-size: 1em;
+	color: #6D6F71;
+	margin-bottom: 0.5em;
+}
+
+a {
+	color: #EB4F75;
+}
+
+main>section {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 0.5em;
+    margin-top: 3em;
+}
+
+main>section>div {
+    width: 45%;
+    height:auto;
+    overflow: hidden;
+    position: relative;
+}
+
+div>img {
+    width:95%;
+    height:auto;
+}
+
+div>h2 {
+    position: absolute;
+    z-index: 2;
+    top:4.2em;
+}
+
+div>p{
+    position: absolute;
+    bottom:1em;
+    z-index: 1;
+    background-color: white;
+    padding: .15em;
+}

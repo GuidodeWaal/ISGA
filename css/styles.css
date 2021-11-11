@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'FilsonPro';
+  src: url('../assets/FilsonProRegular.otf');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+	font-family: 'AcuminVariable';
+	src: url('../assets/AcuminVariableConcept.otf');
+	font-style: normal;
+	font-weight: 300;
+}
+
+html,body {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+body {
+	background-color: #FFFFFF;
+}
+
+header{
+	position: fixed;
+	background-color: #FFFFFF;
+	height:3em;
+	width:100%;
+}
+
+/* footer {
+	position:absolute;
+	bottom:0;
+	background-color:#FFFFFF;
+	height:3em;
+	width:100%;
+} */
+
+/* main>.empt{
+	height:3em;
+	width:auto;
+	background-color: white;
+} */
+
+main>img {
+	width:100%;
+}
+
+
+h1 {
+	font-family: 'FilsonPro', sans-serif;   
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #5475B6;
+	font-weight: 700; /* bold */
+	margin-bottom: 0.5em;
+	padding-left:0.5em;
+}
+
+h2 {
+	font-family: 'FilsonPro', sans-serif;   
+	font-size: 1.5em;
+	color: #FFFFFF;
+	background-color: #EB4F75;
+	font-weight: 700; /* bold */
+	width: fit-content;
+	padding: 5px 20px 5px 20px;
+	margin-bottom: 0.5em;
+}
+
+p {
+	font-family: 'AcuminVariable', sans-serif;
+	font-size: 1em;
+	color: #6D6F71;
+	margin-bottom: 0.5em;
+}
+
+a {
+	color: #EB4F75;
+}
+
+section:first-of-type {
+	height:20em;
+	overflow: auto;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: -4em;
+}
+
+main>section>div {
+	padding-left:1em;
+	position: relative;
+}
+
+main>section>div>img {
+	height: 50%;
+	width:auto;
+	margin-bottom: -1em;
+	border-radius: 1em;
+}
+
+section:nth-of-type(2) {
+	width: 100%;
+	height:auto;
+	position:relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+	margin-bottom: 3em;
+	
+}
+
+section:nth-of-type(2)>img {
+	width:100%;
+	z-index: 1;
+}
+
+section:nth-of-type(2)>h1{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	color: #5475B6;
+}
+
+section:nth-of-type(2)>h1 span{
+	background-color: white;
+}
+
+section:nth-of-type(2)>button{
+	background-color:#EB4F75;
+	color:white;
+	position: absolute;
+	z-index: 2;
+	top:9em;
+	border-style: dashed;
+	border-color: #e7718e;
+	border-width: 3px;
+	height:4em;
+	width:13em;
+	border-radius: .7em;
+}
+
+section:nth-of-type(3) {
+	height:20em;
+	overflow: auto;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: -4em;
+}
