@@ -4,64 +4,75 @@
     font-style: normal;
     font-weight: 300;
 }
-  
+
 @font-face {
-      font-family: 'AcuminVariable';
-      src: url('../assets/AcuminVariableConcept.otf');
-      font-style: normal;
-      font-weight: 300;
+    font-family: 'AcuminVariable';
+    src: url('../assets/AcuminVariableConcept.otf');
+    font-style: normal;
+    font-weight: 300;
 }
-  
-html,body {
-      margin: 0px;
-      height: 100%;
-      width: 100%;
-      position: relative;
-}
-  
+
+html,
 body {
-      background-color: #FFFFFF;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.backbutton {
+    height: 70%;
+    width: auto;
+    left: .5em;
+    top: .5em;
+    position: absolute;
 }
 
 h1 {
-	font-family: 'FilsonPro', sans-serif;   
-	font-size: 2em;
-	text-transform: uppercase;
-	color: #5475B6;
-	font-weight: 700; /* bold */
-	margin-bottom: 0.5em;
-	padding-left:0.5em;
+    font-family: 'FilsonPro', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #5475B6;
+    font-weight: 700;
+    /* bold */
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
 }
 
 h2 {
-	font-family: 'FilsonPro', sans-serif;   
-	font-size: 1.2em;
-	color: #FFFFFF;
-	background-color: #EB4F75;
-	font-weight: 700; /* bold */
-	width: fit-content;
-	padding: 5px 20px 5px 20px;
-	margin-bottom: 0.5em;
+    font-family: 'FilsonPro', sans-serif;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background-color: #EB4F75;
+    font-weight: 700;
+    /* bold */
+    width: fit-content;
+    padding: 5px 20px 5px 20px;
+    margin-bottom: 0.5em;
 }
 
 p {
-	font-family: 'AcuminVariable', sans-serif;
-	font-size: 1em;
-	color: #6D6F71;
-	margin-bottom: 0.5em;
+    font-family: 'AcuminVariable', sans-serif;
+    font-size: 1em;
+    color: #6D6F71;
+    margin-bottom: 0.5em;
 }
 
 a {
-	color: #EB4F75;
+    color: #EB4F75;
 }
 
 input {
-    width:80%;
-    height:2em;
+    width: 80%;
+    height: 2em;
     border-style: solid;
     border-color: darkgrey;
-    margin:1em;
-    margin-left:3em;
+    margin: 1em;
+    margin-left: 3em;
 }
 
 main>section>.item {
@@ -72,8 +83,8 @@ main>section>.item {
 }
 
 .item>img {
-    width:30%;
-    height:auto;
+    width: 30%;
+    height: auto;
 }
 
 .item>div {
