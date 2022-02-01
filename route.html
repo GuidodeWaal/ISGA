@@ -6,21 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISGA</title>
     <link rel="stylesheet" href="css/stylesroute.css">
+    <link rel="icon" type="image/svg+xml" href="images/Logo.png">
 </head>
 
 <body>
     <header>
-        <img src="images/togetherelogo.png" alt="logo">
+        <img onclick="location.href='index.html'" type="button" src="images/togetherelogo.png" alt="logo">
         <a href="javascript:history.back()"><img class="backbutton" src="images/icons/Back.png" alt="back"></a>
+        <img class="profile" src="images/icons/Profile.png" alt="profile">
     </header>
 
     <main>
         <section>
+            <!--In deze section zitten veel overlappende layer elementen. Zie css hoe.-->
             <img src="images/banner1.jpg" alt="routebanner" class="banner">
             <h1> Bars in Amsterdam</h1>
             <h2>Bars & Café's • De Dam <br>
                 Alexandria</h2>
-            <img src="images/Alexandria.png" alt="gebruiker" class="gebruiker">
+            <img src="images/alexandria.png" alt="gebruiker" class="gebruiker">
         </section>
         <section>
             <p>
@@ -28,10 +31,12 @@
             </p>
             <p>De Dam • 16:30 • 22:00</p>
             <div class="button">
-                <button>Join Route</button>
+                <button onclick="location.href='groupschat.html'" type="button">Join Route</button>
             </div>
             <section class="routeitems">
+                <!--Ik heb de section onderverdeeld in een div per item. Zo kon ik ze makkelijk stijlen met flexbox.-->
                 <div class="divider"></div>
+                <!--Een divider om de verschillende items te onderscheiden.-->
                 <div class="item">
                     <img src="images/bar1route.jpg" alt="bar1">
                     <div>
@@ -58,6 +63,7 @@
                 <div class="divider"></div>
             </section>
             <section class="participants">
+                <!--Weer een section onderverdeeld in div's per item voor simpele styling met flexbox.-->
                 <h1> Joined Users</h1>
                 <div class="participant">
                     <img src="images/joeri.png" alt="joeriprofile">
@@ -76,8 +82,9 @@
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2435.854028754873!2d4.890753613597648!3d52.37306678485709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609d9faf2eaab%3A0x28528186b9782ff2!2sDam!5e0!3m2!1snl!2snl!4v1643639978288!5m2!1snl!2snl"
                 allowfullscreen="" loading="lazy"></iframe>
+            <!--iframe van google maps. Verkregen via google maps.-->
             <div class="button">
-                <button>Join Route</button>
+                <button onclick="location.href='groupschat.html'" type="button">Join Route</button>
             </div>
     </main>
 

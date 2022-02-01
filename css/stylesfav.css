@@ -131,8 +131,24 @@ div>h2 {
 
 div>p {
 	position: absolute;
-	bottom: 1em;
+	bottom: .5em;
 	z-index: 1;
 	background-color: white;
 	padding: .15em;
+}
+
+div>.heart {
+	position: absolute;
+	top: .5em;
+	right: 1em;
+	width: 2.5em;
+	height: auto;
+}
+
+.profile {
+	position: absolute;
+	height: 4em;
+	width: auto;
+	top: -.8em;
+	right: 0;
 }

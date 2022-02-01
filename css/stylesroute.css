@@ -89,6 +89,7 @@ a {
 }
 
 iframe {
+    /* Dit is de embedded google maps en de code voor het formaat. */
     height: 20em;
     width: 99%;
 }
@@ -129,6 +130,7 @@ main>section>.button {
 }
 
 .item {
+    /*ik heb een div gemaakt van elk item apart zodat ik ze makkelijk met flexbox kan stijlen. */
     display: flex;
 }
 
@@ -153,6 +155,7 @@ main>section>.button {
 }
 
 .divider {
+    /*Ik heb een divider toegevoegd om de items van elkaar te scheiden. */
     background-color: #3a3a3a;
     height: 1px;
     width: 100%;
@@ -175,6 +178,7 @@ main>section>.button {
 }
 
 .participant {
+    /* Ook hier heb ik een div gemaakt per persoon om ze makkelijk te kunnen stijlen met flex-direction: row. */
     display: flex;
     flex-direction: row;
     position: relative;
@@ -222,4 +226,12 @@ main>section>.button {
     bottom: 0.5em;
     width: 2.5em;
     height: auto;
+}
+
+.profile {
+    position: absolute;
+    height: 4em;
+    width: auto;
+    top: -.8em;
+    right: 0;
 }

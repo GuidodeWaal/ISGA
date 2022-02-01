@@ -12,6 +12,8 @@
 	font-weight: 300;
 }
 
+/*De comments van de main css elementen herhaal ik niet op alle pagina's. */
+
 html,
 body {
 	margin: 0px;
@@ -27,6 +29,7 @@ body {
 main {
 	padding-bottom: 6em;
 	padding-top: 4em;
+	/* Dit zorgt voor lege ruimte voor de header en footer. */
 }
 
 header {
@@ -36,6 +39,7 @@ header {
 	width: 100%;
 	z-index: 10;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*Dit zorgt voor de schaduw glow van de header en footer*/
 	display: flex;
 	justify-content: center;
 }
@@ -47,10 +51,12 @@ footer {
 	height: 5em;
 	width: 100%;
 	z-index: 10;
+	/* Zorgt dat dit de bovenste laag van de pagina is. */
 	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	/* Dit zorgt ervoor dat de menu iconen allemaal precies even ver van elkaar af staan als van de zijkant van het scherm. */
 }
 
 h1 {
@@ -112,8 +118,10 @@ main>img {
 section:first-of-type {
 	height: 20em;
 	overflow: auto;
+	/*Maakt de section scrollbaar*/
 	display: flex;
 	flex-direction: row;
+	/*Zorgt ervoor dat alle div's op een rij staan waardoor hij scrollbaar wordt.*/
 	margin-bottom: -4em;
 }
 
@@ -130,6 +138,7 @@ main>section>div>img {
 }
 
 main>section>div>a>img {
+	/*De klikbare afbeelding*/
 	height: 50%;
 	width: auto;
 	margin-bottom: -1em;
@@ -161,26 +170,38 @@ section:nth-of-type(2)>h1 {
 
 section:nth-of-type(2)>h1 span {
 	background-color: white;
+	/*Zorgt voor een witte achtergrond op alleen de tekst. Ik vond dat dit een mooi effect gaf. */
 }
 
 section:nth-of-type(2)>button {
-	background-color: #EB4F75;
 	color: white;
 	position: absolute;
 	z-index: 2;
-	top: 9em;
+	top: 6em;
+	background-color: #EB4F75;
 	border-style: dashed;
-	border-color: #e7718e;
-	border-width: 3px;
-	height: 4em;
-	width: 13em;
-	border-radius: .7em;
+	/* De gestreepte border van de button */
+	border-color: #e77692;
+	border-width: 5px;
+	border-radius: .5em;
+	font-size: 1.2em;
+	padding: .75em 3em .75em 3em;
 }
 
 section:nth-of-type(3) {
 	height: 20em;
 	overflow: auto;
+	/*Maakt de section scrollbaar*/
 	display: flex;
 	flex-direction: row;
+	/*Zorgt ervoor dat alle div's op een rij staan waardoor hij scrollbaar wordt.*/
 	margin-bottom: -4em;
+}
+
+.profile {
+	position: absolute;
+	height: 4em;
+	width: auto;
+	top: -.8em;
+	right: 0;
 }

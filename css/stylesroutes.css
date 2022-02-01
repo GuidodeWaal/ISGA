@@ -88,7 +88,9 @@ a {
 }
 
 input {
+    /* De opmaak van de zoekbalk. */
     padding: 1.3em 4em 1.3em 5em;
+    /*zorgt voor het formaat van de zoekbalk. */
     background-color: rgb(241, 241, 241);
     border: 2px;
     font-size: 1em;
@@ -121,6 +123,7 @@ main>a>img {
 }
 
 .filter {
+    /*Een filtericon. */
     position: absolute;
     height: 2.2em;
     width: auto;
@@ -129,12 +132,14 @@ main>a>img {
 }
 
 .searchicon {
+    /* Ik heb een vergrootglas icoon hier toegevoegd voor de mooi en om duidelijk te maken dat dit om een zoekbalk gaat. */
     height: 3em;
     width: auto;
     position: absolute;
     top: 4.5em;
     left: 0.5em;
     opacity: .2;
+    /* Dit zorgt ervoor dat de orginele afbeelding doorzichtig wordt waardoor je makkelijk de afbeelding lichter kan maken. */
 }
 
 .addbutton {
@@ -143,4 +148,12 @@ main>a>img {
     left: 1em;
     height: 80%;
     width: auto;
+}
+
+.profile {
+    position: absolute;
+    height: 4em;
+    width: auto;
+    top: -.8em;
+    right: 0;
 }

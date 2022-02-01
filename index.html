@@ -6,11 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ISGA</title>
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="icon" type="image/svg+xml" href="images/Logo.png">
+	<!-- Ik heb een logo toegevoegd aan de html pagina. -->
 </head>
 
 <body>
 	<header>
-		<img src="images/togetherelogo.png" alt="logo">
+		<img onclick="location.href='index.html'" type="button" src="images/togetherelogo.png" alt="logo">
+		<!--Het logo van de app boven in de header.-->
+		<img class="profile" src="images/icons/Profile.png" alt="profile">
+		<!--Een profiel icoontje, deze werkt echter niet.-->
 	</header>
 
 	<main>
@@ -18,6 +23,7 @@
 		<h1> Recommended Places</h1>
 		<section>
 			<div>
+				<!--Ik maak een div van elk item zodat ik de div's apart in een flexbox row kan zetten.-->
 				<img src="images/plein.png" alt="HVA" class="item">
 				<h2> HVA</h2>
 				<p>School Location</p>
@@ -31,18 +37,23 @@
 				<a href="item.html">
 					<img src="images/park.png" alt="Oosterpark" class="item">
 				</a>
-				<h2>Oosterpark</h2>
+				<h2 onclick="location.href='item.html'" type="button">Oosterpark</h2>
+				<!--onclick zorgt ervoor dat de titel klikbaar is.-->
 				<p>Park</p>
 			</div>
 		</section>
 		<section>
 			<img src="images/map.png" alt="routemap">
 			<h1><span> See user made routes </span></h1>
-			<button>See routes</button>
+			<!--Span zorgt voor de witte achterkant van alléén de tekst.-->
+			<button onclick="location.href='routes.html'" type="button">See routes</button>
+			<!--onclick zorgt ervoor dat de button 
+					klikbaar wordt. Ik heb ook een <a> element geprobeerd, maar dat lukte niet goed in de css om de een of andere reden-->
 		</section>
 		<h1>Places to drink</h1>
 		<section>
 			<div>
+				<!--Hier doe ik weer hetzelfde als bij de eerste section.-->
 				<img src="images/bar1.png" alt="bukowski">
 				<h2>Bukowski</h2>
 				<p>Cafe</p>
@@ -61,7 +72,9 @@
 	</main>
 
 	<footer>
+		<!--De footer met alle icoontjes.-->
 		<img src="images/icons/HomeSelected.png" alt="home">
+		<!--"Selected" staat voor het geselecteerde menu. Dit icoontje wordt dan donkerder dan de rest.-->
 		<a href="search.html"><img src="images/icons/Search.png" alt="search"></a>
 		<a href="favorieten.html"><img src="images/icons/Favourites.png" alt="favourites"></a>
 		<a href="routes.html"><img src="images/icons/Route.png" alt="routes"></a>

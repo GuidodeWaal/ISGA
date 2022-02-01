@@ -113,6 +113,7 @@ main>.banner {
 }
 
 main>section>.extraimg {
+	/*Dit zijn de extra afbeeldingen onder de grote afbeelding. */
 	width: 31.5%;
 	height: auto;
 	margin: .2em;
@@ -130,16 +131,21 @@ article>img {
 }
 
 .options {
+	/*Het zwevende optie menuutje met bijvoorbeeld de deelknop. */
 	width: 4em;
 	height: auto;
 	border-radius: 3em;
+	/*Dit zorgt voor de afgeronde randen, waardoor het een strak menuutje lijkt. */
 	position: fixed;
 	right: 1em;
 	bottom: 7em;
+	/* Right en bottom om het menuutje op de gewenste plaats te krijgen. */
 	background-color: white;
 	padding: .3em;
 	padding-right: -2em;
+	/*padding om het menuutje van een gewenst formaat te krijgen. */
 	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 1.5px 5px 0 rgba(0, 0, 0, 0.19);
+	/*Een box-shadow voor het zwevende effect. */
 }
 
 .options>img {
