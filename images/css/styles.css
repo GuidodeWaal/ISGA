@@ -1,0 +1,207 @@
+@font-face {
+	font-family: 'FilsonPro';
+	src: url('../assets/FilsonProRegular.otf');
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: 'AcuminVariable';
+	src: url('../assets/AcuminVariableConcept.otf');
+	font-style: normal;
+	font-weight: 300;
+}
+
+/*De comments van de main css elementen herhaal ik niet op alle pagina's. */
+
+html,
+body {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+body {
+	background-color: #FFFFFF;
+}
+
+main {
+	padding-bottom: 6em;
+	padding-top: 4em;
+	/* Dit zorgt voor lege ruimte voor de header en footer. */
+}
+
+header {
+	position: fixed;
+	background-color: #FFFFFF;
+	height: 4em;
+	width: 100%;
+	z-index: 10;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*Dit zorgt voor de schaduw glow van de header en footer*/
+	display: flex;
+	justify-content: center;
+}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	background-color: #FFFFFF;
+	height: 5em;
+	width: 100%;
+	z-index: 10;
+	/* Zorgt dat dit de bovenste laag van de pagina is. */
+	box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	/* Dit zorgt ervoor dat de menu iconen allemaal precies even ver van elkaar af staan als van de zijkant van het scherm. */
+}
+
+h1 {
+	font-family: 'FilsonPro', sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: #5475B6;
+	font-weight: 700;
+	/* bold */
+	margin-bottom: 0.5em;
+	padding-left: 0.5em;
+}
+
+h2 {
+	font-family: 'FilsonPro', sans-serif;
+	font-size: 1.5em;
+	color: #FFFFFF;
+	background-color: #EB4F75;
+	font-weight: 700;
+	/* bold */
+	width: fit-content;
+	padding: 5px 20px 5px 20px;
+	margin-bottom: 0.5em;
+}
+
+p {
+	font-family: 'AcuminVariable', sans-serif;
+	font-size: 1em;
+	color: #6D6F71;
+	margin-bottom: 0.5em;
+}
+
+a {
+	color: #EB4F75;
+}
+
+footer>img {
+	height: 70%;
+	width: auto;
+	margin-top: .7em;
+}
+
+footer>a>img {
+	height: 70%;
+	width: auto;
+	margin-top: .7em;
+}
+
+header>img {
+	height: 55%;
+	width: auto;
+	margin-top: .75em;
+}
+
+main>img {
+	width: 100%;
+}
+
+section:first-of-type {
+	height: 20em;
+	overflow: auto;
+	/*Maakt de section scrollbaar*/
+	display: flex;
+	flex-direction: row;
+	/*Zorgt ervoor dat alle div's op een rij staan waardoor hij scrollbaar wordt.*/
+	margin-bottom: -4em;
+}
+
+main>section>div {
+	padding-left: 1em;
+	position: relative;
+}
+
+main>section>div>img {
+	height: 50%;
+	width: auto;
+	margin-bottom: -1em;
+	border-radius: 1em;
+}
+
+main>section>div>a>img {
+	/*De klikbare afbeelding*/
+	height: 50%;
+	width: auto;
+	margin-bottom: -1em;
+	border-radius: 1em;
+}
+
+section:nth-of-type(2) {
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 2em;
+	margin-bottom: 3em;
+
+}
+
+section:nth-of-type(2)>img {
+	width: 100%;
+	z-index: 1;
+}
+
+section:nth-of-type(2)>h1 {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	color: #5475B6;
+}
+
+section:nth-of-type(2)>h1 span {
+	background-color: white;
+	/*Zorgt voor een witte achtergrond op alleen de tekst. Ik vond dat dit een mooi effect gaf. */
+}
+
+section:nth-of-type(2)>button {
+	color: white;
+	position: absolute;
+	z-index: 2;
+	top: 6em;
+	background-color: #EB4F75;
+	border-style: dashed;
+	/* De gestreepte border van de button */
+	border-color: #e77692;
+	border-width: 5px;
+	border-radius: .5em;
+	font-size: 1.2em;
+	padding: .75em 3em .75em 3em;
+}
+
+section:nth-of-type(3) {
+	height: 20em;
+	overflow: auto;
+	/*Maakt de section scrollbaar*/
+	display: flex;
+	flex-direction: row;
+	/*Zorgt ervoor dat alle div's op een rij staan waardoor hij scrollbaar wordt.*/
+	margin-bottom: -4em;
+}
+
+.profile {
+	position: absolute;
+	height: 4em;
+	width: auto;
+	top: -.8em;
+	right: 0;
+}

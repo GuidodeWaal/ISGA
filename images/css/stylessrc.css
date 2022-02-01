@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'FilsonPro';
+    src: url('../assets/FilsonProRegular.otf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'AcuminVariable';
+    src: url('../assets/AcuminVariableConcept.otf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.backbutton {
+    height: 70%;
+    width: auto;
+    left: .5em;
+    top: .5em;
+    position: absolute;
+}
+
+main {
+    padding-bottom: 6em;
+    padding-top: 4em;
+}
+
+header {
+    position: fixed;
+    background-color: #FFFFFF;
+    height: 4em;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    background-color: #FFFFFF;
+    height: 5em;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-family: 'FilsonPro', sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #5475B6;
+    font-weight: 700;
+    /* bold */
+    margin-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+
+h2 {
+    font-family: 'FilsonPro', sans-serif;
+    font-size: 1.2em;
+    color: #FFFFFF;
+    background-color: #EB4F75;
+    font-weight: 700;
+    /* bold */
+    width: fit-content;
+    padding: 5px 20px 5px 20px;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-family: 'AcuminVariable', sans-serif;
+    font-size: 1em;
+    color: #6D6F71;
+    margin-bottom: 0.5em;
+}
+
+a {
+    color: #EB4F75;
+}
+
+input {
+    padding: 1.3em 4em 1.3em;
+    background-color: rgb(241, 241, 241);
+    border: 2px;
+    font-size: 1em;
+}
+
+footer>img {
+    height: 70%;
+    width: auto;
+    margin-top: .7em;
+}
+
+footer>a>img {
+    height: 70%;
+    width: auto;
+    margin-top: .7em;
+}
+
+header>img {
+    height: 55%;
+    width: auto;
+    margin-top: .75em;
+}
+
+main>section>.item {
+    display: flex;
+    flex-direction: row;
+    border-top: solid;
+    border-color: #5475B6;
+}
+
+.item>img {
+    width: 30%;
+    height: auto;
+}
+
+.item>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.item>div>p {
+    margin-left: 1em;
+}
+
+.searchicon {
+    height: 3em;
+    width: auto;
+    position: absolute;
+    top: 4.5em;
+    left: 0.5em;
+    opacity: .2;
+}
+
+.filter {
+    position: absolute;
+    height: 2.2em;
+    width: auto;
+    right: .9em;
+    top: 5em;
+}
+
+.profile {
+    position: absolute;
+    height: 4em;
+    width: auto;
+    top: -.8em;
+    right: 0;
+}
